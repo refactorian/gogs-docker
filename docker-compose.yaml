@@ -5,6 +5,7 @@ services:
   gogs:
     image: gogs/gogs:latest
     container_name: gogs-server
+    restart: always
     volumes:
       - ./data/gogs:/data
     ports:
